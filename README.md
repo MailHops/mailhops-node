@@ -44,7 +44,7 @@ var options = {
 
 mailhops.configure(options);
 
-mailhops.lookup('216.58.217.46,98.138.253.109',function(err,response){
+mailhops.lookup(['216.58.217.46','98.138.253.109'],function(err,response){
 	console.log(response);
 });
 

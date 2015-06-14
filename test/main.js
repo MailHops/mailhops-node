@@ -39,6 +39,14 @@ describe("main", function(){
                 done();
             });
         });
+
+        it('array lookup test should return a 200 response with private ip', function(done){
+            mailhops.lookup(['127.0.0.1','216.58.217.46','98.138.253.109'], function(err, response){
+                assert.equal(response.meta['code'],200);
+                assert.equal(response.response.route[0]['private'],true);
+                done();
+            });
+        });
     });
 
 });
