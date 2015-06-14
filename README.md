@@ -1,6 +1,8 @@
 # MailHops API node
 [www.MailHops.com](http://www.mailhops.com)
 
+[![Build Status](https://travis-ci.org/avantassel/mailhops-node.svg)](https://travis-ci.org/avantassel/mailhops-node)
+
 <img src="http://www.mailhops.com/images/logos/mailhops395.png" width="200" alt="MailHops logo" title="MailHops" align="right" />
 
 A nodejs module for interacting with the MailHops API.
@@ -58,4 +60,3 @@ $ npm test
 ## Other MailHops projects
 - [API](https://github.com/avantassel/mailhops-api)
 - [Postbox & Thunderbird plugin](https://github.com/avantassel/mailhops-plugin)
-- [Download](https://addons.mozilla.org/en-US/thunderbird/addon/mailhops/)
