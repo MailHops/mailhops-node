@@ -1,0 +1,48 @@
+{
+  "name": "mailhops",
+  "version": "0.0.1",
+  "description": "A nodejs module for interacting with the MailHops API.",
+  "main": "main.js",
+  "dependencies": {
+    "assert": "^1.1.1",
+    "async": "^0.6.2",
+    "lodash": "^2.4.1",
+    "mocha": "^2.2.4",
+    "qs": "^3.1.0",
+    "request": "https://registry.npmjs.org/request/-/request-2.34.0.tgz"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/avantassel/mailhops-node.git"
+  },
+  "keywords": [
+    "mailhops",
+    "api",
+    "email",
+    "route",
+    "geoip",
+    "weather"
+  ],
+  "author": {
+    "name": "Andrew Van Tassel",
+    "email": "andrew@mailhops.com"
+  },
+  "license": "GPLv2",
+  "bugs": {
+    "url": "https://github.com/avantassel/mailhops-node/issues"
+  },
+  "homepage": "https://github.com/avantassel/mailhops-node",
+  "_npmUser": {
+    "name": "avantassel",
+    "email": "andrew@andrewvantassel.com"
+  },
+  "maintainers": [
+    {
+      "name": "avantassel",
+      "email": "andrew@mailhops.com"
+    }
+  ]
+}

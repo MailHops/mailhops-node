@@ -1,0 +1,8 @@
+{
+    "base_uri": "http://api.mailhops.com"
+    ,"app_name": "Node App"
+    ,"api_version": 1
+    ,"api_key": ""
+    ,"forecastio_api_key": ""
+    ,"show_client": 1
+}
