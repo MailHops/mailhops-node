@@ -1,10 +1,13 @@
 var _ = require("lodash");
 var assert = require("assert");
+var request = require("request");
 var fs = require('fs');
 var configuration = require([__dirname, "..", "config"].join("/"));
 var pkg = require([__dirname, "..", "package"].join("/"));
 var MailHops = require([__dirname, "..", "main"].join("/"));
 var mailhops = new MailHops(configuration);
+
+console.log('Using %s', mailhops.base_uri);
 
 describe("main", function(){
     
@@ -48,18 +51,29 @@ describe("main", function(){
                 done();
             });
         });
+
+    });
+
+    describe("map endpoint", function(){
+
+        it('should return a 200 response', function(done){
+            request(mailhops.mapUrl('127.0.0.1'), function (error, response, body) {
+                assert.equal(response.statusCode,200);
+                done();
+            });
+        });
+
     });
 
     describe("parse header", function(){
+
         it('should return an array of 8 IP addresses', function(done){
-            
             //read header form file
             var header = fs.readFileSync(__dirname+'/header-test.eml',{ encoding: 'utf8' });
-
             assert.equal(mailhops.getIPsFromHeader(header).length,8);
-
             done();
         });
+
     });
 
 });
