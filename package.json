@@ -1,6 +1,6 @@
 {
   "name": "mailhops",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A nodejs module for interacting with the MailHops API.",
   "main": "main.js",
   "dependencies": {

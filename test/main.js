@@ -1,5 +1,6 @@
 var _ = require("lodash");
 var assert = require("assert");
+var fs = require('fs');
 var configuration = require([__dirname, "..", "config"].join("/"));
 var pkg = require([__dirname, "..", "package"].join("/"));
 var MailHops = require([__dirname, "..", "main"].join("/"));
@@ -30,9 +31,9 @@ describe("main", function(){
         
     });
 
-    describe("GET lookup", function(){
+    describe("lookup endpoint", function(){
 
-        it('should return a 200 response with private ip', function(done){
+        it('string route should return a 200 response with private ip', function(done){
             mailhops.lookup('127.0.0.1', function(err, response){
                 assert.equal(response.meta['code'],200);
                 assert.equal(response.response.route[0]['private'],true);
@@ -40,12 +41,24 @@ describe("main", function(){
             });
         });
 
-        it('array lookup test should return a 200 response with private ip', function(done){
+        it('array route should return a 200 response with private ip', function(done){
             mailhops.lookup(['127.0.0.1','216.58.217.46','98.138.253.109'], function(err, response){
                 assert.equal(response.meta['code'],200);
                 assert.equal(response.response.route[0]['private'],true);
                 done();
             });
+        });
+    });
+
+    describe("parse header", function(){
+        it('should return an array of 8 IP addresses', function(done){
+            
+            //read header form file
+            var header = fs.readFileSync(__dirname+'/header-test.eml',{ encoding: 'utf8' });
+
+            assert.equal(mailhops.getIPsFromHeader(header).length,8);
+
+            done();
         });
     });
 

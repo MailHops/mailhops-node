@@ -43,8 +43,13 @@ var options = {
 }
 
 mailhops.configure(options);
+// get IPs from a full header where headerText is the full header
+var ips = mailhops.getIPsFromHeader(headerText);
 
-mailhops.lookup(['216.58.217.46','98.138.253.109'],function(err,response){
+// or pass in an array of IP addresses
+var ips = ['216.58.217.46','98.138.253.109'];
+
+mailhops.lookup(ips,function(err,response){
 	console.log(response);
 });
 

@@ -1,0 +1,48 @@
+Return-Path: <bounces+1352097-7fe0-andrew=mailhops.com@delivery2.klaviyomail.com>
+X-Originating-IP: [2607:fb90:50f:5547:0:46:e46a:bd01]
+X-Original-To: andrew@mailhops.com
+Delivered-To: x12669597@homiemail-mx32.g.dreamhost.com
+Received: from o2.delivery2.klaviyomail.com (o2.delivery2.klaviyomail.com [198.21.5.108])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits))
+	(No client certificate requested)
+	by homiemail-mx32.g.dreamhost.com (Postfix) with ESMTPS id 4BE0510190916
+	for <andrew@mailhops.com>; Mon, 15 Jun 2015 10:38:03 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed; 
+	d=delivery.klaviyomail.com; 
+	h=content-type:mime-version:from:to:subject; s=smtpapi; 
+	bh=lu70JKUbpAjCA9G5JXKZECq8PFc=; b=PNXTO8t5e2Bh/kmKAmOYvgQ+MDGfj
+	4DAOoP00xozjkYc6KMkyOLFUrfRrZEpBYXQC0m6IXDsyiTuk8SkopTpcc8YYitoa
+	yv4eaW1h9XRG0VYvl3RbBX5QFZsikRmReBO9Yu8gdLizZ8X83SF5TCwDLU99V/OL
+	F6oLELBhbNFezk=
+Received: by filter0500p1mdw1.sendgrid.net with SMTP id filter0500p1mdw1.14444.557F0D731E
+        2015-06-15 17:37:59.069788226 +0000 UTC
+Received: from queue-worker-166.servers.clovesoftware.com (ec2-54-157-138-253.compute-1.amazonaws.com [54.157.138.253])
+	by ismtpd-013 (SG) with ESMTP id 14df84c98b9.582.18b0cc
+	for <andrew@mailhops.com>; Mon, 15 Jun 2015 17:37:58 +0000 (UTC)
+Received: from ip-10-157-90-72.ec2.internal (localhost [127.0.0.1])
+	by queue-worker-166.servers.clovesoftware.com (Postfix) with ESMTP id E2343271B8
+	for <andrew@mailhops.com>; Mon, 15 Jun 2015 17:37:58 +0000 (UTC)
+Received: from edge01.net.lu.se (130.235.56.196) by uwcas04.uw.lu.se
+ (130.235.59.236) with Microsoft SMTP Server (TLS) id 14.3.195.1; Thu, 4 Sep
+ 2014 11:38:30 +0200
+Received: from muon.isy.liu.se (130.236.48.25) by edge01.net.lu.se
+ (130.235.56.196) with Microsoft SMTP Server id 14.3.195.1; Thu, 4 Sep 2014
+ 11:38:29 +0200
+Received: from ip227-36.wireless.lu.se (ip227-36.wireless.lu.se
+ [130.235.227.36])	(using TLSv1 with cipher AES128-SHA (128/128 bits))	(No
+ client certificate requested)	by muon.isy.liu.se (Postfix) with ESMTPSA id
+ D4B3D802;	Thu,  4 Sep 2014 11:38:28 +0200 (MEST)
+Content-Type: multipart/alternative;
+ boundary="===============2767014682564602329=="
+MIME-Version: 1.0
+From: ProgrammableWeb Today <editor@programmableweb.com>
+To: Andrew Van Tassel <andrew@mailhops.com>
+Subject: Is It Time to Move On from .NET?
+Date: Mon, 15 Jun 2015 17:37:58 GMT
+X-Kmail-Relay: [gmh6f2.krelaymail.com]:587
+Message-Id: <20150615173758.E2343271B8@queue-worker-166.servers.clovesoftware.com>
+X-SG-EID: z/7dFXGDBkx/fUP8kk8C2xB01JCsbu4AgSgValkgiTccFIBxI9L4Y1qe6fbe+Uf2YVSIXGTcm+Mu+n
+ idt9gFAaQCzrGKYViH5a2BTU5yTlhPKLPdY6IcUKXoofBE4zcfPxZ0mr5orMgWetTx9CAhDgReTGyz
+ F59uuTcPAGosAUo=
+X-SG-ID: x3+8Rw3sG8PRR1BPwp/fGYid6bBXOCegs1g2PMmkkWW51Br61ph7xHEIqgadleR9yav2PSHdWBO49l
+ vFFxpgDQIK2ywWpGxvmvOx3RiyFUs=

@@ -1,10 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
-## [Unreleased][unreleased]
+## [0.0.3] - 2015-06-15
 
 ### Added
-- Header parsing
+- Header IP parsing
 
 ## [0.0.1] - 2015-06-14
 

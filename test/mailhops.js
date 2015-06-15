@@ -15,7 +15,9 @@ describe("mailhops", function(){
             var required_keys = [
                 "configure",
                 "lookup",
-                "mapUrl"
+                "mapUrl",
+                "getIPsFromHeader",
+                "getReceivedHeaders"
             ]
 
             assert.deepEqual(_.keys(mailhops.__proto__), required_keys);
