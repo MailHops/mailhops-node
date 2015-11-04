@@ -1,6 +1,7 @@
 # MailHops API node
 [www.MailHops.com](http://www.mailhops.com)
 
+[![NPM Version](http://img.shields.io/npm/v/mailhops.svg)](https://www.npmjs.org/package/mailhops)
 [![Build Status](https://travis-ci.org/avantassel/mailhops-node.svg)](https://travis-ci.org/avantassel/mailhops-node)
 
 <img src="http://www.mailhops.com/images/logos/mailhops395.png" width="200" alt="MailHops logo" title="MailHops" align="right" />
