@@ -1,8 +1,7 @@
 {
-    "base_uri": "http://api.mailhops.com"
-    ,"app_name": "Node App v1.0.0"
-    ,"api_version": 1
+    "base_uri": "https://api.mailhops.com"
+    ,"app_name": "Node App v2.0.0"
+    ,"api_version": 2
     ,"api_key": ""
     ,"forecastio_api_key": ""
-    ,"show_client": 1
 }
