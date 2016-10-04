@@ -6,7 +6,7 @@ Received: from 198.21.5.108.o2.delivery2.klaviyomail.com (o2.delivery2.klaviyoma
 	(using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits))
 	(No client certificate requested)
 	by homiemail-mx32.g.dreamhost.com (Postfix) with ESMTPS id 4BE0510190916
-	for <andrew@mailhops.com>; Thu, 3 Sep 2014 16:38:38 -0700 (PDT)
+	for <andrew@mailhops.com>; Thu, 3 Sep 2014 16:38:48 -0700 (PDT)
 DKIM-Signature: v=1; a=rsa-sha1; c=relaxed;
 	d=delivery.klaviyomail.com;
 	h=content-type:mime-version:from:to:subject; s=smtpapi;
@@ -31,14 +31,14 @@ Received: from muon.isy.liu.se (130.236.48.25) by edge01.net.lu.se
 Received: from ip227-36.wireless.lu.se (ip227-36.wireless.lu.se
  [130.235.227.36])	(using TLSv1 with cipher AES128-SHA (128/128 bits))	(No
  client certificate requested)	by muon.isy.liu.se (Postfix) with ESMTPSA id
- D4B3D802;	Thu,  4 Sep 2014 1:38:28 +0200 (MEST)
+ D4B3D802;	Thu, 3 Sep 2014 16:38:38 -0700 (PDT)
 Content-Type: multipart/alternative;
  boundary="===============2767014682564602329=="
 MIME-Version: 1.0
 From: ProgrammableWeb Today <editor@programmableweb.com>
 To: Andrew Van Tassel <andrew@mailhops.com>
 Subject: Is It Time to Move On from .NET?
-Date: Thu,  4 Sep 2014 1:38:28 GMT
+Date: Thu, 3 Sep 2014 16:38:38 -0700 (PDT)
 X-Kmail-Relay: [gmh6f2.krelaymail.com]:587
 Message-Id: <20150615173758.E2343271B8@queue-worker-166.servers.clovesoftware.com>
 X-SG-EID: z/7dFXGDBkx/fUP8kk8C2xB01JCsbu4AgSgValkgiTccFIBxI9L4Y1qe6fbe+Uf2YVSIXGTcm+Mu+n

@@ -1,10 +1,10 @@
 # MailHops API node
 [www.MailHops.com](http://www.mailhops.com)
 
+<img src="https://www.mailhops.com/images/logos/logo.png" alt="MailHops logo" title="MailHops" align="right" />
+
 [![Build Status](https://travis-ci.org/avantassel/mailhops-node.svg)](https://travis-ci.org/avantassel/mailhops-node)
 [![NPM version](https://img.shields.io/npm/v/mailhops.svg)](https://www.npmjs.com/package/mailhops)
-
-<img src="https://www.mailhops.com/images/logos/logo.png" alt="MailHops logo" title="MailHops" align="right" />
 
 A nodejs module for interacting with the MailHops API.
 
@@ -32,7 +32,7 @@ var mailhops = new MailHops({
 });
 ```
 
-MailHops objects can also be configured via the `.configure(options)` method. Here is an exmaple:
+MailHops objects can also be configured via the `.configure(options)` method. Here is an example:
 
 ```javascript
 var MailHops = require("mailhops");
