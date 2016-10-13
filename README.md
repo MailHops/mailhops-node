@@ -66,9 +66,4 @@ $ npm test
 ```
 
 ## Other MailHops projects
-<<<<<<< HEAD
 - https://github.com/mailhops
-=======
-- [API](https://github.com/avantassel/mailhops-api)
-- [Postbox & Thunderbird plugin](https://github.com/avantassel/mailhops-plugin)
->>>>>>> bfb4b247b41c1729e2a7a097e568f4750d53a9e8
