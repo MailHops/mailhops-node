@@ -3,7 +3,7 @@
 
 <img src="https://www.mailhops.com/images/logos/logo.png" alt="MailHops logo" title="MailHops" align="right" />
 
-[![Build Status](https://travis-ci.org/avantassel/mailhops-node.svg)](https://travis-ci.org/avantassel/mailhops-node)
+[![Build Status](https://travis-ci.org/MailHops/mailhops-node.svg)](https://travis-ci.org/MailHops/mailhops-node)
 [![NPM version](https://img.shields.io/npm/v/mailhops.svg)](https://www.npmjs.com/package/mailhops)
 
 A nodejs module for interacting with the MailHops API.
@@ -66,4 +66,9 @@ $ npm test
 ```
 
 ## Other MailHops projects
+<<<<<<< HEAD
 - https://github.com/mailhops
+=======
+- [API](https://github.com/avantassel/mailhops-api)
+- [Postbox & Thunderbird plugin](https://github.com/avantassel/mailhops-plugin)
+>>>>>>> bfb4b247b41c1729e2a7a097e568f4750d53a9e8
