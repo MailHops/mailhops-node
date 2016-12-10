@@ -20,7 +20,9 @@ describe("mailhops", function(){
                 "mapUrl",
                 "getIPsFromHeader",
                 "getIPsFromMailParser",
-                "getReceivedHeaders"
+                "getReceivedHeaders",
+                "getStartHop",
+                "getEndHop"
             ]
 
             assert.deepEqual(_.keys(mailhops.__proto__), required_keys);
