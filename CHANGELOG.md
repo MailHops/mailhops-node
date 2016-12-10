@@ -1,6 +1,15 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## 2.0.2 - 2016-12-09
+
+### Added
+- Get Start Hop method
+- Get End Hop method
+
+### Fixed
+- getIPsFromMailParser when only one received header that is a string.
+
 ## 2.0.1 - 2016-12-08
 
 ### Added
