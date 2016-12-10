@@ -1,6 +1,11 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## 2.0.1 - 2016-12-08
+
+### Added
+- getIPsFromMailParser method for parsed message from [mailparser](https://www.npmjs.com/package/mailparser)
+
 ## 2.0.0 - 2016-09-09
 
 ### Added

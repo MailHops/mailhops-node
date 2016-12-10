@@ -4,13 +4,13 @@ var request = require("request");
 var fs = require('fs');
 var configuration = require([__dirname, "..", "config"].join("/"));
 var MailHops = require([__dirname, "..", "main"].join("/"));
-var mailhops = new MailHops(configuration);
-
-console.log('Using %s', mailhops.base_uri);
 
 describe("main", function(){
 
     describe("new MailHops()", function(){
+
+        var mailhops = new MailHops(configuration);
+
         it("api_version parameter exists", function(){
             assert.ok(_.has(mailhops, "api_version"));
         });
@@ -30,6 +30,8 @@ describe("main", function(){
     });
 
     describe("lookup endpoint", function(){
+
+        var mailhops = new MailHops(configuration);
 
         it('string route should return a 200 response with private ip', function(done){
             mailhops.lookup('127.0.0.1', function(err, res, body){
@@ -58,6 +60,8 @@ describe("main", function(){
 
     describe("map endpoint", function(){
 
+        var mailhops = new MailHops(configuration);
+
         it('should return a 200 response', function(done){
             request(mailhops.mapUrl('127.0.0.1'), function (err, res, body) {
                 assert.equal(res.statusCode,200);
@@ -68,6 +72,9 @@ describe("main", function(){
     });
 
     describe("parse header and lookup", function(){
+
+        var mailhops = new MailHops(configuration);
+
         //read header form file
         var header = fs.readFileSync(__dirname+'/header-test.eml',{ encoding: 'utf8' });
         var ips = mailhops.getIPsFromHeader(header);
@@ -106,6 +113,9 @@ describe("main", function(){
     });
 
     describe("parse header", function(){
+
+        var mailhops = new MailHops(configuration);
+
         //read header form file
         var header = fs.readFileSync(__dirname+'/header-test-no-ips.eml',{ encoding: 'utf8' });
         var ips = mailhops.getIPsFromHeader(header);
@@ -116,7 +126,27 @@ describe("main", function(){
         });
 
         it('should return a time of 0 milliseconds', function(done){
-            assert.equal(mailhops.time,null);
+            assert.equal(mailhops.timeTraveled(),null);
+            done();
+        });
+
+    });
+
+    describe("get IPs form mailparser", function(){
+
+        var mailhops = new MailHops(configuration);
+
+        //read header form file
+        var message = fs.readFileSync(__dirname+'/mailparser.json',{ encoding: 'utf8' });
+        var ips = mailhops.getIPsFromMailParser(JSON.parse(message));
+
+        it('should return an array of 0 IP addresses', function(done){
+            assert.equal(ips.length,3);
+            done();
+        });
+
+        it('should return a time of 0 milliseconds', function(done){
+            assert.equal(mailhops.timeTraveled(),2000);
             done();
         });
 

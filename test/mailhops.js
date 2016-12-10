@@ -15,9 +15,11 @@ describe("mailhops", function(){
             var required_keys = [
                 "configure",
                 "time_traveled",
+                "timeTraveled",
                 "lookup",
                 "mapUrl",
                 "getIPsFromHeader",
+                "getIPsFromMailParser",
                 "getReceivedHeaders"
             ]
 

@@ -1,5 +1,5 @@
 # MailHops API node
-[www.MailHops.com](http://www.mailhops.com)
+[www.MailHops.com](https://www.mailhops.com)
 
 <img src="https://www.mailhops.com/images/logos/logo.png" alt="MailHops logo" title="MailHops" align="right" />
 
@@ -27,7 +27,7 @@ var mailhops = new MailHops({
     api_key: "aWN8Pb27Xj6GfV8D6ARsjokonYwbWUNbz9rM",
     api_version: 2,
     proxy: "http://myproxy:3128",
-    app_name: "Node App v2.0.0",
+    app_name: "Node App v2.0.1",
     forecastio_api_key: ""
 });
 ```

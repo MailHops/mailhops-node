@@ -1,0 +1,35 @@
+{
+    "text": "Ok test it then\n",
+    "headers": {
+        "return-path": "<andrew@showhops.com>",
+        "x-original-to": "andrew@mailhops.com",
+        "delivered-to": "x12669597@homiemail-mx18.g.dreamhost.com",
+        "received": ["from homiemail-a110.g.dreamhost.com (agjbgdcfdbdd.dreamhost.com [69.163.253.130]) (using TLSv1.1 with cipher AECDH-AES256-SHA (256/256 bits)) (No client certificate requested) by homiemail-mx18.g.dreamhost.com (Postfix) with ESMTPS id 5895D9004034 for <andrew@mailhops.com>; Thu,  8 Dec 2016 16:02:34 -0800 (PST)"
+          , "from homiemail-a110.g.dreamhost.com (localhost [127.0.0.1]) by homiemail-a110.g.dreamhost.com (Postfix) with ESMTP id 1BA792004763B for <andrew@mailhops.com>; Thu,  8 Dec 2016 16:02:34 -0800 (PST)"
+          , "from Andrews-MacBook-Pro-4.local (c-67-177-226-240.hsd1.co.comcast.net [67.177.226.240]) (Authenticated sender: andrew@showhops.com) by homiemail-a110.g.dreamhost.com (Postfix) with ESMTPA id F349520047638 for <andrew@mailhops.com>; Thu,  8 Dec 2016 16:02:33 -0800 (PST)"
+        ],
+        "dkim-signature": "v=1; a=rsa-sha1; c=relaxed; d=showhops.com; h=message-id :date:from:mime-version:to:subject:content-type :content-transfer-encoding; s=showhops.com; bh=gXjUxcC3bG8U+A3N7 7ELq45N68U=; b=U09iG7hIF9CmUxHZSxHJekgSgfApMkJmTTMDeyXsVSJlMQish ElW8P2UfAd1k2+x+PlrV7vDIxr2NSyWI/qDSuYuQt4GStsfJnS2LVEodzPM0Mfsx yAK16/iGNu87UCnYo6v3xvilyW6D0L4P4RM/NB7ib7NinOUIaWJiMJ/hAk=",
+        "message-id": "<5849F498.3080807@showhops.com>",
+        "date": "Thu, 08 Dec 2016 17:02:32 -0700",
+        "from": "Andrew Van Tassel <andrew@showhops.com>",
+        "user-agent": "Postbox 4.0.8 (Macintosh/20151105)",
+        "mime-version": "1.0",
+        "to": "Andrew Van Tassel <andrew@mailhops.com>",
+        "subject": "tomorrow ok",
+        "content-type": "text/plain; charset=ISO-8859-1; format=flowed",
+        "content-transfer-encoding": "7bit"
+    },
+    "subject": "tomorrow ok",
+    "messageId": "5849F498.3080807@showhops.com",
+    "priority": "normal",
+    "from": [{
+        "address": "andrew@showhops.com",
+        "name": "Andrew Van Tassel"
+    }],
+    "to": [{
+        "address": "andrew@mailhops.com",
+        "name": "Andrew Van Tassel"
+    }],
+    "date": "2016-12-09T00:02:32.000Z",
+    "receivedDate": "2016-12-09T00:02:34.000Z"
+}
