@@ -78,6 +78,7 @@ describe("main", function(){
         //read header form file
         var header = fs.readFileSync(__dirname+'/header-test.eml',{ encoding: 'utf8' });
         var ips = mailhops.getIPsFromHeader(header);
+
         it('should return an array of 9 Received IPs', function(done){
             assert.equal(ips.length,9);
             done();
@@ -101,6 +102,12 @@ describe("main", function(){
                                       '2607:fb90:50f:5547:0:46:e46a:bd01']);
             done();
         });
+
+        it('should not find id 15.1.225.42', function(done){
+            assert.equal(ips.indexOf('15.1.225.42'),-1);
+            done();
+        });
+
 
         it('should return a 200 response and route of 10 hops', function(done){
           mailhops.lookup(mailhops.getIPsFromHeader(header), function(err, res, body){
