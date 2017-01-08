@@ -108,7 +108,6 @@ describe("main", function(){
             done();
         });
 
-
         it('should return a 200 response and route of 10 hops', function(done){
           mailhops.lookup(mailhops.getIPsFromHeader(header), function(err, res, body){
               assert.equal(res.statusCode,200);
@@ -147,14 +146,34 @@ describe("main", function(){
         var message = fs.readFileSync(__dirname+'/mailparser.json',{ encoding: 'utf8' });
         var ips = mailhops.getIPsFromMailParser(JSON.parse(message));
 
-        it('should return an array of 0 IP addresses', function(done){
+        it('should return an array of 3 IP addresses', function(done){
             assert.equal(ips.length,3);
             done();
         });
 
-        it('should return a time of 0 milliseconds', function(done){
+        it('should return a time of 2000 milliseconds', function(done){
             assert.equal(mailhops.timeTraveled(),2000);
             done();
+        });
+
+        it('should find 3 Received IPs', function(done){
+            assert.deepEqual(ips,['67.177.226.240',
+                                      '127.0.0.1',
+                                      '69.163.253.130']);
+            done();
+        });
+
+        it('should not find id 15.1.225.42', function(done){
+            assert.equal(ips.indexOf('15.1.225.42'),-1);
+            done();
+        });
+
+        it('should return a 200 response and route of 4 hops', function(done){
+          mailhops.lookup(ips, function(err, res, body){
+              assert.equal(res.statusCode,200);
+              assert.equal(body.response['route'].length,4);
+              done();
+          });
         });
 
     });
