@@ -1,6 +1,11 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## 2.1.0 - 2017-02-21
+
+### Fixed
+- IP order when Received header has multiple IPs.  
+
 ## 2.0.2 - 2016-12-09
 
 ### Added
