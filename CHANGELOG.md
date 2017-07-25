@@ -1,6 +1,11 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## 2.1.1 - 2017-07-25
+
+### Fixed
+- IP test when IP regex finds a semantic version with a trailing colon
+
 ## 2.1.0 - 2017-02-21
 
 ### Fixed
