@@ -79,8 +79,8 @@ describe("main", function(){
         var header = fs.readFileSync(__dirname+'/header-test.eml',{ encoding: 'utf8' });
         var ips = mailhops.getIPsFromHeader(header);
 
-        it('should return an array of 9 Received IPs', function(done){
-            assert.equal(ips.length,9);
+        it('should return an array of 10 Received IPs', function(done){
+            assert.equal(ips.length,10);
             done();
         });
 
@@ -90,8 +90,9 @@ describe("main", function(){
             done();
         });
 
-        it('should find 9 Received IPs', function(done){
-            assert.deepEqual(ips,['130.235.227.36',
+        it('should find 11 Received IPs', function(done){
+            assert.deepEqual(ips,['2001:4860:4860::8888',
+                                      '130.235.227.36',
                                       '130.236.48.25',
                                       '130.235.56.196',
                                       '130.235.56.196',
@@ -99,7 +100,8 @@ describe("main", function(){
                                       '127.0.0.1',
                                       '54.157.138.253',
                                       '198.21.5.108',
-                                      '2607:fb90:50f:5547:0:46:e46a:bd01']);
+                                      '2607:fb90:50f:5547:0:46:e46a:bd01'
+                                      ]);
             done();
         });
 
@@ -108,10 +110,10 @@ describe("main", function(){
             done();
         });
 
-        it('should return a 200 response and route of 10 hops', function(done){
+        it('should return a 200 response and route of 11 hops', function(done){
           mailhops.lookup(mailhops.getIPsFromHeader(header), function(err, res, body){
               assert.equal(res.statusCode,200);
-              assert.equal(body.response['route'].length,10);
+              assert.equal(body.response['route'].length,11);
               done();
           });
         });

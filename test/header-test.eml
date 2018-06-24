@@ -32,6 +32,14 @@ Received: from ip227-36.wireless.lu.se (ip227-36.wireless.lu.se
  [130.235.227.36])	(using TLSv1 with cipher AES128-SHA (128/128 bits))	(No
  client certificate requested)	by muon.isy.liu.se (Postfix) with ESMTPSA id
  D4B3D802;	Thu, 3 Sep 2014 16:38:38 -0700 (PDT)
+Received: from mail-vk0-x231.google.com ([IPv6:2001:4860:4860::8888])
+ 	by smtpin.rzone.de (RZmta 43.10 REPLY)
+ 	with ESMTPS id S05391u5CBmerDX
+ 	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (curve secp384r1 with 384 ECDH bits, eq. 7680 bits RSA))
+ 	(Client CN "smtp.gmail.com", Issuer "Google Internet Authority G2" (verified OK))
+ 	(Client hostname verification FAILED)
+ 	for <cron@mailhops.com>;
+ 	Tue, 12 Jun 2018 13:48:40 +0200 (CEST)
 Content-Type: multipart/alternative;
  boundary="===============2767014682564602329=="
 MIME-Version: 1.0
